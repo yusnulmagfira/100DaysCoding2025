@@ -3,13 +3,9 @@ package YusnulMagfira;
 public class Day32 {
     public static void main(String[] args) {
 
-        int angka = 3;
+        int angka = 7;
         int angka1 = 5;
-
-        if(angka > 2 || angka1 > 2) {
-            System.out.println("hasilnnya true");
-        }else{
-            System.out.println("hasilnya false");
-        }
+        boolean hasil = angka > 3 || angka1 > 3;
+        System.out.println(hasil);
     }
 }
