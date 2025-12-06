@@ -7,7 +7,7 @@ public class Day90 {
     }
     public static void main(String[] args) {
         Day90 tes = new Day90();
-        int hasil1 = tes.segitiga(21, 7);;
+        int hasil1 = tes.segitiga(21, 7);
         System.out.println(hasil1);
 
 
