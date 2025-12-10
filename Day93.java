@@ -1,3 +1,4 @@
+package YusnulMagfira;
 public class Day93 {
     public static void main(String[] args) {
         double angka = 2.3;
