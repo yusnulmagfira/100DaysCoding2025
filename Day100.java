@@ -1,16 +1,13 @@
 package YusnulMagfira;
+
 import java.util.*;
-
 public class Day100 {
-
-    static int[] arrBaru; // array hasil hashing & pergeseran
+    static int[] arrBaru; 
     static int n;
-
-    // Fungsi untuk menghitung total pergeseran dan membentuk array baru
     static int retas(int[] arr) {
         n = arr.length;
         arrBaru = new int[n];
-        Arrays.fill(arrBaru, -1); // -1 artinya kosong
+        Arrays.fill(arrBaru, -1);
 
         int totalPergeseran = 0;
 
@@ -18,7 +15,6 @@ public class Day100 {
             int idx = x % n;
             int geser = 0;
 
-            // Linear probing ke kanan
             while (arrBaru[idx] != -1) {
                 idx = (idx + 1) % n;
                 geser++;
@@ -31,7 +27,7 @@ public class Day100 {
         return totalPergeseran;
     }
 
-    // Fungsi untuk menyusun kode sandi
+
     static String susunKode(int p) {
         StringBuilder sb = new StringBuilder();
 
@@ -41,11 +37,11 @@ public class Day100 {
             }
         }
 
-        // Ambil hanya p digit pertama
+
         return sb.substring(0, Math.min(p, sb.length()));
     }
 
-    // Contoh main program
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -60,5 +56,6 @@ public class Day100 {
         String kode = susunKode(p);
 
         System.out.println(kode);
+
     }
 }
